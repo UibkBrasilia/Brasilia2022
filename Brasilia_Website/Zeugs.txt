@@ -1,0 +1,23 @@
+Zu style css
+
+
+header h1 {
+    font-size: 34px;
+    text-shadow: 0 0 5px gray;
+    color: rgb(243, 26, 26);
+    background-color:#ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin: 16px;
+}
+
+header h2 {
+    font-size: 28px;
+    text-shadow: 0 0 5px gray;
+    color: rgb(243, 26, 26);
+    background-color:#ffffff;
+    font-weight: bold;
+    text-align: center;
+    margin: 16px;
+}
+

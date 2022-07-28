@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir=""ltr">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Brasília</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Boxicons CDN Link -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxs-city'></i>
+                <div class="logo_name">Brasília</div>    
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder=""Search...">
+                <span class="tooltip">Search</span>
+            <li>
+                <a href="#">
+                    <i class='bx bx-map-alt' ></i>
+                    <span class="links_name">Map</span>
+                </a>
+                <span class="tooltip">Map</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-map-alt' ></i>
+                    <span class="links_name">About Us</span>
+                </a>
+                <span class="tooltip">About Us</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-map-alt' ></i>
+                    <span class="links_name">Groups</span>
+                </a>
+                <span class="tooltip">Groups</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-map-alt' ></i>
+                    <span class="links_name">Results</span>
+                </a>
+                <span class="tooltip">Results</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <div class="institution">
+                        <div class="uni">Universität Innsbruck</div>
+                        <div class="insitut">Geographie Entwicklungsforschung</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="text">Home Content</div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let sidebar = document.querySelector(".sidebar");
+        let searchBtn = document.querySelector("bx-search");
+
+        btn.onclick = functions() {
+            sidebar.classList.toggle("active");
+        }
+
+        searchBtn.onclick = functions() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
+
+</body>
