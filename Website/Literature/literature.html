@@ -3,156 +3,142 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
     <link rel="stylesheet" href="style.css">
-    <!-- Boxicons CDN Link -->
+    <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-   <!-- Google Font Raleway-->
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-
-   <!-- FontAwesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-   <!-- Leaflet -->
-   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-       crossorigin="" />
-   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-       crossorigin=""></script>
-
-   <!-- Leaflet Providers -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.12.0/leaflet-providers.min.js"
-       integrity="sha512-LixflAm9c0/qONbz9F1Ept+QJ6QBpb7wUlPuyv1EHloTVgwSK8j3yMV3elnElGQcv7Y5QTFlF/FqyeE/N4LnKQ=="
-       crossorigin="anonymous"></script>
-
-   <!-- Leaflet.fullscreen-->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/2.0.0/Control.FullScreen.css"
-       integrity="sha512-KQk/GTCcAywe4iEOhnZ6ZmWDNv/3NvOE6f0iUvrNVCX/oD7+sPXAeDP90aOX3EXHmerC6gDYUlUBaSd4hxjWEw=="
-       crossorigin="anonymous" />
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/2.0.0/Control.FullScreen.js"
-       integrity="sha512-TaNrKSd5TOm4PfgJMFYkDpQ1X8GmqXBlh+Kmk83Mfrcx9sjTzqI1zcZd0n0xpdJevfPL7voAcbblrUaYx+LM1g=="
-       crossorigin="anonymous"></script>
-
-   <link rel="stylesheet" href="style.css">
-   <script src="colors.js"></script>
-   <script src="owid-co2-data.js"></script>
-   <script src="custom.geojson"></script>
-   <script defer src="main.js"></script>
-   
-   
-    </head>
-   <body>
-    <div class="sidebar open">
-      <div class="logo-details">
-          <i class='bx bxs-city'></i>
-          <a href="start.html">
-            <div class="logo_name">MENU</div>
-          </a>
-          <i class='bx bx-menu' id="btn" ></i>
-      </div>
-      <ul class="nav-list">
-        <li>
-            <i class='bx bx-search' ></i>
-           <input type="text" placeholder="Search...">
-           <span class="tooltip">Search</span>
-        </li>
-        <li>
-          <a href="map\map.html">
-              <i class='bx bx-map-alt' ></i>
-            <span class="links_name">Map</span>
-          </a>
-           <span class="tooltip">Map</span>
-        </li>
-       <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class='bx bx-group' ></i>
-              <span class="link_name">Groups</span>
-            </a>
-            <i class='bx bxs-chevron-down arrow' ></i>
-          </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Groups</a></li>
-            <li><a href="#">Group 1</a></li>
-            <li><a href="#">Group 2</a></li>
-            <li><a href="#">Group 3</a></li>
-          </ul>
-        </li>
-       </li>
-       <li>
-        <a href="#">
-         <i class='bx bxs-flag-checkered' ></i>
-          <span class="links_name">Results</span>
-        </a>
-        <span class="tooltip">Results</span>
-      </li>
-      <li>
-        <a href="#">
-         <i class='bx bxs-book-content' ></i>
-          <span class="links_name">Literature</span>
-        </a>
-        <span class="tooltip">Literature</span>
-      </li>
-       <li>
-        <a href="#">
-          <i class='bx bx-user' ></i>
-          <span class="links_name">About Us</span>
-        </a>
-        <span class="tooltip">About Us</span>
-      </li>
-      <li>
-        <a href="#">
-         <i class='bx bxs-envelope' ></i>
-          <span class="links_name">Impressum</span>
-        </a>
-        <span class="tooltip">Impressum</span>
-      </li>
-       <li class="profile">
-           <div class="profile-details">
-             <div class="name_job">
-               <div class="name">University of Innsbruck</div>
-               <div class="job">EGeography</div>
-             </div>
-           </div>
-           <i class='bx bx-log-out' id="log_out" ></i>
-       </li>
-      </ul>
-    </div>
-    <section class="home-section">
-
-        <div class="titel">Literature</div> <br>
-        <div class="sub_titel">Our Sources and further recommended literature</div> <br>
-    
+   </head>
+<body>
   
-        <div class="text"> Hier kommen Literaturangaben und weiterführende Literatur hin.
-
-            <img src="Brazil_Main_Picture.jpg" width="1200" height="365" alt="Bild kann nicht geladen werden." border="3" align="bx-menu-alt-right">
-            <p class="source"><a href="https://unsplash.com/photos/UwBrS-qRMHo" target=”_blank”>source</a></p>
-
-            <div id="map"></div>
-
-
-    </section>
-
+  <div class="sidebar open">
+    <div class="logo-details">
+      <i class='bx bx-ccheckbox'></i>
+      <span class="logo_name">Menu</span>
+      <i class='bx bx-menu-alt-right' id="btn" ></i>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-home' ></i>
+          <span class="link_name">Home</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Home</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-map-alt' ></i>
+          <span class="link_name">Map</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Map</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-news' ></i>
+            <span class="link_name">Groups</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Groups</a></li>
+          <li><a href="#">Group 1</a></li>
+          <li><a href="#">Group 2</a></li>
+          <li><a href="#">Group 3</a></li>
+          <li><a href="#">Group 4</a></li>
+          <li><a href="#">Group 5</a></li>
+          <li><a href="#">Group 6</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-check-square' ></i>
+          <span class="link_name">Fazit</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Fazit</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-group' ></i>
+            <span class="link_name">About us</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">About us</a></li>
+          <li><a href="#">Geography UIBK</a></li>
+          <li><a href="#">Vertiefung</a></li>
+          <li><a href="#">Excursion</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-link-alt' ></i>
+          <span class="link_name">Literature</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Literature</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-contact' ></i>
+          <span class="link_name">Impressum</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Impressum</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">University of Innsbruck</div>
+        <div class="job">Geography</div>
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <span class="text">Impressum</span>
+    </div>
+  </section>
   <script>
+
+
   let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
-  let searchBtn = document.querySelector(".bx-search");
+  let sidebarBtn = document.querySelector(".bx-menu-alt-right");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+
+
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
 
   closeBtn.addEventListener("click", ()=>{
     sidebar.classList.toggle("open");
     menuBtnChange();//calling the function(optional)
   });
 
-  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
-    sidebar.classList.toggle("open");
-    menuBtnChange(); //calling the function(optional)
-  });
+
 
   // following are the code to change sidebar button(optional)
   function menuBtnChange() {
@@ -162,7 +148,7 @@
      closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
    }
   }
-  </script>
 
+  </script>
 </body>
 </html>

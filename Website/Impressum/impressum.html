@@ -10,10 +10,12 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
+  
   <div class="sidebar open">
     <div class="logo-details">
-      <i class='bx bx-menu-alt-left'></i>
+      <i class='bx bx-ccheckbox'></i>
       <span class="logo_name">Menu</span>
+      <i class='bx bx-menu-alt-right' id="btn" ></i>
     </div>
     <ul class="nav-links">
       <li>
@@ -22,7 +24,7 @@
           <span class="link_name">Home</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Groups</a></li>
+          <li><a class="link_name" href="#">Home</a></li>
         </ul>
       </li>
       <li>
@@ -87,7 +89,7 @@
       </li>
       <li>
         <a href="#">
-          <i class='bx bx-contact' ></i>
+          <i class='bx bxs-contact' ></i>
           <span class="link_name">Impressum</span>
         </a>
         <ul class="sub-menu blank">
@@ -97,7 +99,6 @@
       <li>
     <div class="profile-details">
       <div class="profile-content">
-        <!--<img src="image/profile.jpg" alt="profileImg">-->
       </div>
       <div class="name-job">
         <div class="profile_name">University of Innsbruck</div>
@@ -109,11 +110,21 @@
   </div>
   <section class="home-section">
     <div class="home-content">
-      <i class='bx bx-menu' ></i>
       <span class="text">Impressum</span>
     </div>
   </section>
   <script>
+
+
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let sidebarBtn = document.querySelector(".bx-menu-alt-right");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+
+
   let arrow = document.querySelectorAll(".arrow");
   for (var i = 0; i < arrow.length; i++) {
     arrow[i].addEventListener("click", (e)=>{
@@ -121,12 +132,23 @@
    arrowParent.classList.toggle("showMenu");
     });
   }
-  let sidebar = document.querySelector(".sidebar");
-  let sidebarBtn = document.querySelector(".bx-menu");
-  console.log(sidebarBtn);
-  sidebarBtn.addEventListener("click", ()=>{
-    sidebar.classList.toggle("close");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
   });
+
+
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+
   </script>
 </body>
 </html>

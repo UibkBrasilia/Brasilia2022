@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  
+  <div class="sidebar open">
+    <div class="logo-details">
+      <i class='bx bx-ccheckbox'></i>
+      <span class="logo_name">Menu</span>
+      <i class='bx bx-menu-alt-right' id="btn" ></i>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-home' ></i>
+          <span class="link_name">Home</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Home</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-map-alt' ></i>
+          <span class="link_name">Map</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Map</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-news' ></i>
+            <span class="link_name">Groups</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Groups</a></li>
+          <li><a href="#">Group 1</a></li>
+          <li><a href="#">Group 2</a></li>
+          <li><a href="#">Group 3</a></li>
+          <li><a href="#">Group 4</a></li>
+          <li><a href="#">Group 5</a></li>
+          <li><a href="#">Group 6</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-check-square' ></i>
+          <span class="link_name">Fazit</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Fazit</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-group' ></i>
+            <span class="link_name">About us</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">About us</a></li>
+          <li><a href="#">Geography UIBK</a></li>
+          <li><a href="#">Vertiefung</a></li>
+          <li><a href="#">Excursion</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-link-alt' ></i>
+          <span class="link_name">Literature</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Literature</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-contact' ></i>
+          <span class="link_name">Impressum</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Impressum</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">University of Innsbruck</div>
+        <div class="job">Geography</div>
+      </div>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <span class="text">Impressum</span>
+    </div>
+  </section>
+  <script>
+
+
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let sidebarBtn = document.querySelector(".bx-menu-alt-right");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+
+
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+
+  </script>
+</body>
+</html>
