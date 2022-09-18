@@ -1,4 +1,4 @@
-const GRUPPE1 = [
+const GRUPPE4 = [
     {
         nr: 1,
         user: "Concordia Sozialprojekte",
@@ -26,4 +26,3 @@ const GRUPPE1 = [
     },
 
 ];
-

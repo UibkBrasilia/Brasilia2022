@@ -99,6 +99,57 @@ for (let entry of GRUPPE1) {
     }).addTo(overlays.Gruppe1);
 }
 
+
+//tear data from Gruppe1.js and add to map with marker and popup 
+for (let entry of GRUPPE2) {
+    let mrk = L.marker([entry.lat, entry.lng], {
+        icon: Gr1Icon
+    });
+    mrk.bindPopup(`<h1>${entry.user}<h1>
+        <h3>${entry.intro}</h3>
+        <h4>${entry.about}</h4>
+        <h4>Adresse: ${entry.Adresse}</h4>
+        <h4><i class="far fa-envelope mr-3" style="margin-right: 0.3em"></i><a href=" mailto:${entry.Mail}" target="_blank">${entry.Mail}</a></h4>
+        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
+        `, {
+        maxHeight: 310
+    }).addTo(overlays.Gruppe2);
+}
+
+
+//tear data from Gruppe1.js and add to map with marker and popup 
+for (let entry of GRUPPE3) {
+    let mrk = L.marker([entry.lat, entry.lng], {
+        icon: Gr1Icon
+    });
+    mrk.bindPopup(`<h1>${entry.user}<h1>
+        <h3>${entry.intro}</h3>
+        <h4>${entry.about}</h4>
+        <h4>Adresse: ${entry.Adresse}</h4>
+        <h4><i class="far fa-envelope mr-3" style="margin-right: 0.3em"></i><a href=" mailto:${entry.Mail}" target="_blank">${entry.Mail}</a></h4>
+        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
+        `, {
+        maxHeight: 310
+    }).addTo(overlays.Gruppe3);
+}
+
+
+//tear data from Gruppe1.js and add to map with marker and popup 
+for (let entry of GRUPPE4) {
+    let mrk = L.marker([entry.lat, entry.lng], {
+        icon: Gr1Icon
+    });
+    mrk.bindPopup(`<h1>${entry.user}<h1>
+        <h3>${entry.intro}</h3>
+        <h4>${entry.about}</h4>
+        <h4>Adresse: ${entry.Adresse}</h4>
+        <h4><i class="far fa-envelope mr-3" style="margin-right: 0.3em"></i><a href=" mailto:${entry.Mail}" target="_blank">${entry.Mail}</a></h4>
+        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
+        `, {
+        maxHeight: 310
+    }).addTo(overlays.Gruppe4);
+}
+
 // Leaflet hash
 var hash = new L.Hash(map);
 
