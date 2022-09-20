@@ -99,12 +99,12 @@ for (let entry of GRUPPE1) {
     mrk.bindPopup(`<h1>${entry.user}<h1>
         <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
-        <figure> ${entry.pic} style="height: 202px; width: auto; margin: auto;"></figure>
+        <h4>${entry.image}</h4>
         <h4>Adresse: ${entry.Adresse}</h4>
         <h4><i class="far fa-envelope mr-3" style="margin-right: 0.3em"></i><a href=" mailto:${entry.Mail}" target="_blank">${entry.Mail}</a></h4>
         <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
         `, {
-        maxHeight: 310
+        //maxHeight: 310
     }).addTo(overlays.Gruppe1);
 }
 
