@@ -112,7 +112,7 @@ for (let entry of GRUPPE1) {
 //tear data from Gruppe1.js and add to map with marker and popup 
 for (let entry of GRUPPE2) {
     let mrk = L.marker([entry.lat, entry.lng], {
-        icon: Gr1Icon
+        icon: Gr2Icon
     });
     mrk.bindPopup(`<h1>${entry.user}<h1>
         <h3>${entry.intro}</h3>
@@ -130,7 +130,7 @@ for (let entry of GRUPPE2) {
 //tear data from Gruppe1.js and add to map with marker and popup 
 for (let entry of GRUPPE3) {
     let mrk = L.marker([entry.lat, entry.lng], {
-        icon: Gr1Icon
+        icon: Gr3Icon
     });
     mrk.bindPopup(`<h1>${entry.user}<h1>
         <h3>${entry.intro}</h3>
@@ -148,7 +148,7 @@ for (let entry of GRUPPE3) {
 //tear data from Gruppe1.js and add to map with marker and popup 
 for (let entry of GRUPPE4) {
     let mrk = L.marker([entry.lat, entry.lng], {
-        icon: Gr1Icon
+        icon: Gr4Icon
     });
     mrk.bindPopup(`<h1>${entry.user}<h1>
         <h3>${entry.intro}</h3>
