@@ -104,7 +104,7 @@ for (let entry of GRUPPE1) {
         <h4><i class="far fa-envelope mr-3" style="margin-right: 0.3em"></i><a href=" mailto:${entry.Mail}" target="_blank">${entry.Mail}</a></h4>
         <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
         `, {
-        //maxHeight: 310
+        maxHeight: 310
     }).addTo(overlays.Gruppe1);
 }
 
@@ -135,10 +135,11 @@ for (let entry of GRUPPE3) {
         <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
         <h4>Adresse: ${entry.Adresse}</h4>
+        <img src= "${entry.image}" alt="chruch">
         <h4><i class="far fa-envelope mr-3" style="margin-right: 0.3em"></i><a href=" mailto:${entry.Mail}" target="_blank">${entry.Mail}</a></h4>
         <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
         `, {
-        maxHeight: 310
+        maxHeight: 700
     }).addTo(overlays.Gruppe3);
 }
 
