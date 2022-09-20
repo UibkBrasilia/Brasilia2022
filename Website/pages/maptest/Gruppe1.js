@@ -8,7 +8,7 @@ const GRUPPE1 = [
         intro: "Gemeinnützige Privatstiftung",
         about: "CONCORDIA ist eine internationale, unabhängige Nichtregierungsorganisation, die es sich zur Aufgabe gemacht hat, Kinder, Jugendliche und Familien in Not auf dem Weg in ein unabhängiges und verantwortungsvolles Leben zu unterstützen. Wir gehen dorthin, wo die Not am größten ist. Und wo andere nicht hingehen. Quelle: https://www.concordia.or.at/de/vision",
         weblink: "https://www.concordia.or.at/",
-        pic: "Website\pages\maptest\pics\church.jpeg",
+        image: "Website/pages/maptest/church.jpeg",
         lat:  -15.80896, 
         lng: -47.94766,
     },
