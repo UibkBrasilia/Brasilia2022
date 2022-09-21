@@ -43,13 +43,14 @@ let overlays = {
 
 //  add overlays to layers
 let layerControl = L.control.layers({}, {
-    "<img src='icons\bus.png' /> Gruppe 1": overlays.Gruppe1,
-    "<img src='icons/health.png' /> Gruppe 2": overlays.Gruppe2,
-    "<img src='icons/sozial.png' /> Gruppe3": overlays.Gruppe3,
-    "<img src='icons/tree.png' /> Gruppe 4": overlays.Gruppe4
+    "<img src='icons/bus.png' /> Gruppe 1": overlays.Gruppe1,
+    "<img src='icons/einkaufswagen.png' /> Gruppe 2": overlays.Gruppe2,
+    "<img src='icons/beer.png' /> Gruppe3": overlays.Gruppe3,
+    "<img src='icons/home.png' /> Gruppe 4": overlays.Gruppe4
 }, {
     position: 'topright',
     collapsed: true,
+    maxHeight:38,
 }).addTo(map);
 
 
@@ -69,18 +70,21 @@ var LeafIcon = L.Icon.extend({
     }
 });
 
-var Gr1Icon = new LeafIcon({
+    var Gr1Icon = new LeafIcon({
         iconUrl: 'icons/bus.png'
-    }),
+    });
+    Gr1Icon.height = 38;
+    Gr1Icon.width = 38; 
+
     Gr2Icon = new LeafIcon({
         iconUrl: 'icons/einkaufswagen.png'
-    }),
+    });
     Gr3Icon = new LeafIcon({
-        iconUrl: 'icons/city.png'
+        iconUrl: 'icons/beer.png'
     });
     Gr4Icon = new LeafIcon({
-        iconUrl: 'icons/health.png'
-});
+        iconUrl: 'icons/home.png'
+    });
 
 
 // button to close sidebar
@@ -101,7 +105,6 @@ for (let entry of GRUPPE1) {
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <h4>Adresse: ${entry.Adresse}</h4>
-        <h4><i class="far fa-envelope mr-3" style="margin-right: 0.3em"></i><a href=" mailto:${entry.Mail}" target="_blank">${entry.Mail}</a></h4>
         <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
         `, {
         maxHeight: 310
@@ -109,7 +112,7 @@ for (let entry of GRUPPE1) {
 }
 
 
-//tear data from Gruppe1.js and add to map with marker and popup 
+//tear data from Gruppe2.js and add to map with marker and popup 
 for (let entry of GRUPPE2) {
     let mrk = L.marker([entry.lat, entry.lng], {
         icon: Gr2Icon
@@ -119,7 +122,6 @@ for (let entry of GRUPPE2) {
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <h4>Adresse: ${entry.Adresse}</h4>
-        <h4><i class="far fa-envelope mr-3" style="margin-right: 0.3em"></i><a href=" mailto:${entry.Mail}" target="_blank">${entry.Mail}</a></h4>
         <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
         `, {
         maxHeight: 310
@@ -127,7 +129,7 @@ for (let entry of GRUPPE2) {
 }
 
 
-//tear data from Gruppe1.js and add to map with marker and popup 
+//tear data from Gruppe3.js and add to map with marker and popup 
 for (let entry of GRUPPE3) {
     let mrk = L.marker([entry.lat, entry.lng], {
         icon: Gr3Icon
