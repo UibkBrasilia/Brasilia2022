@@ -1,4 +1,4 @@
-const GRUPPE4 = [
+const GRUPPE6 = [
     {
         nr: 1,
         user: "TITEL",
@@ -29,7 +29,7 @@ const GRUPPE4 = [
         about: "Beschreibung",
         weblink: "Weiterführender Link",
         image: "<img src='church.jpeg' />", 
-        lat:  -15.83896, 
+        lat:  -14.83896, 
         lng: -47.94766,
     },
     {
