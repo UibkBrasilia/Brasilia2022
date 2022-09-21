@@ -39,14 +39,18 @@ let overlays = {
     Gruppe2: L.markerClusterGroup(),
     Gruppe3: L.markerClusterGroup(),
     Gruppe4: L.markerClusterGroup(),
+    Gruppe5: L.markerClusterGroup(),
+    Gruppe6: L.markerClusterGroup(),
 };
 
 //  add overlays to layers
 let layerControl = L.control.layers({}, {
     "<img src='icons/bus.png' /> Gruppe 1": overlays.Gruppe1,
     "<img src='icons/einkaufswagen.png' /> Gruppe 2": overlays.Gruppe2,
-    "<img src='icons/beer.png' /> Gruppe3": overlays.Gruppe3,
-    "<img src='icons/home.png' /> Gruppe 4": overlays.Gruppe4
+    "<img src='icons/beer.png' /> Gruppe 3": overlays.Gruppe3,
+    "<img src='icons/home.png' /> Gruppe 4": overlays.Gruppe4,
+    "<img src='icons/government.png' /> Gruppe 5": overlays.Gruppe5,
+    "<img src='icons/pointer.png' /> Gruppe 6": overlays.Gruppe6
 }, {
     position: 'topright',
     collapsed: true,
@@ -59,6 +63,8 @@ overlays.Gruppe1.addTo(map);
 overlays.Gruppe2.addTo(map);
 overlays.Gruppe3.addTo(map);
 overlays.Gruppe4.addTo(map);
+overlays.Gruppe5.addTo(map);
+overlays.Gruppe6.addTo(map);
 
 
 //create icons
@@ -70,12 +76,10 @@ var LeafIcon = L.Icon.extend({
     }
 });
 
-    var Gr1Icon = new LeafIcon({
+var Gr1Icon = new LeafIcon({
         iconUrl: 'icons/bus.png'
     });
-    Gr1Icon.height = 38;
-    Gr1Icon.width = 38; 
-
+    
     Gr2Icon = new LeafIcon({
         iconUrl: 'icons/einkaufswagen.png'
     });
@@ -85,6 +89,15 @@ var LeafIcon = L.Icon.extend({
     Gr4Icon = new LeafIcon({
         iconUrl: 'icons/home.png'
     });
+    Gr5Icon = new LeafIcon({
+        iconUrl: 'icons/government.png'
+    });
+    Gr6Icon = new LeafIcon({
+        iconUrl: 'icons/pointer.png'
+    });
+    
+    
+
 
 
 // button to close sidebar
@@ -102,8 +115,8 @@ for (let entry of GRUPPE1) {
     });
     mrk.bindPopup(`<h1>${entry.user}<h1>
         <h3>${entry.intro}</h3>
-        <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
+        <h4>${entry.about}</h4>
         <h4>Adresse: ${entry.Adresse}</h4>
         <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
         `, {
@@ -161,6 +174,38 @@ for (let entry of GRUPPE4) {
         `, {
         maxHeight: 310
     }).addTo(overlays.Gruppe4);
+}
+
+//tear data from Gruppe5.js and add to map with marker and popup 
+for (let entry of GRUPPE5) {
+    let mrk = L.marker([entry.lat, entry.lng], {
+        icon: Gr5Icon
+    });
+    mrk.bindPopup(`<h1>${entry.user}<h1>
+        <h3>${entry.intro}</h3>
+        <h4>${entry.about}</h4>
+        <h4>${entry.image}</h4>
+        <h4>Adresse: ${entry.Adresse}</h4>
+        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
+        `, {
+        maxHeight: 310
+    }).addTo(overlays.Gruppe5);
+}
+
+//tear data from Gruppe6.js and add to map with marker and popup 
+for (let entry of GRUPPE6) {
+    let mrk = L.marker([entry.lat, entry.lng], {
+        icon: Gr6Icon
+    });
+    mrk.bindPopup(`<h1>${entry.user}<h1>
+        <h3>${entry.intro}</h3>
+        <h4>${entry.about}</h4>
+        <h4>${entry.image}</h4>
+        <h4>Adresse: ${entry.Adresse}</h4>
+        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
+        `, {
+        maxHeight: 310
+    }).addTo(overlays.Gruppe6);
 }
 
 // Leaflet hash
