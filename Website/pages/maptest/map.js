@@ -155,7 +155,7 @@ for (let entry of GRUPPE3) {
         <h4><i class="far fa-envelope mr-3" style="margin-right: 0.3em"></i><a href=" mailto:${entry.Mail}" target="_blank">${entry.Mail}</a></h4>
         <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
         `, {
-        maxHeight: 700
+        maxHeight: 310
     }).addTo(overlays.Gruppe3);
 }
 

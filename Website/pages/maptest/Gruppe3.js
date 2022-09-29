@@ -1,14 +1,16 @@
-const GRUPPE3 = [{
-        nr: 1,
-        user: "Condomínios fechados verticais",
-        Adresse: "Adresse",
-        intro: "Untertitel",
-        about: "Inner-city gated communities are mainly large apartment complexes with walls and strict access controls which have extensive utilities and leisure infrastructure and thus enable their residents to live a large part of their everyday life within the compound. That means that most of the condomínios fechados verticais are secured by walls, video surveillance and doormen. This living arrangement is based on the concepts of spatialisation of (in)security and space-oriented security policies. These security strategies led to the creation of vertical gated communities for the middle class, meaning that only people who live there have access to the apartment buildings and their communal amenities.6 Within these condomínios fechados verticais, residents must pay operating costs called “condomínio” in order to use infrastructure and common areas. The condomínio’s cost varies greatly, with a mean cost of R$ 771.94, a minimum of R$ 70 and a maximum of R$ 2800 per month. The question arises as to what causes this difference and whether it is influenced by the size of the flat, the number of rooms, or the number of floors. According to Fernando Luiz Araújo Sobrinho (professor of geography at the UNB), the infrastructure is decisive to the cost of the condomínio. He regards swimming pools, chapels, green spaces, and other communal facilities as infrastructure.",
-        weblink: "Weiterführender Link",
-        image: "<img src='church.jpeg'>",
-        lat:  -15.8395591, 
-        lng: -48.0211268,
-    },
+const GRUPPE3 = [
+    {
+    nr: 1,
+    user: "Condomínios fechados verticais",
+    Adresse: "Adresse",
+    intro: "Untertitel",
+    about: "Inner-city gated communities are mainly large apartment complexes with walls and strict access controls which have extensive utilities and leisure infrastructure and thus enable their residents to live a large part of their everyday life within the compound. That means that most of the condomínios fechados verticais are secured by walls, video surveillance and doormen. This living arrangement is based on the concepts of spatialisation of (in)security and space-oriented security policies. These security strategies led to the creation of vertical gated communities for the middle class, meaning that only people who live there have access to the apartment buildings and their communal amenities.6 Within these condomínios fechados verticais, residents must pay operating costs called “condomínio” in order to use infrastructure and common areas. The condomínio’s cost varies greatly, with a mean cost of R$ 771.94, a minimum of R$ 70 and a maximum of R$ 2800 per month. The question arises as to what causes this difference and whether it is influenced by the size of the flat, the number of rooms, or the number of floors. According to Fernando Luiz Araújo Sobrinho (professor of geography at the UNB), the infrastructure is decisive to the cost of the condomínio. He regards swimming pools, chapels, green spaces, and other communal facilities as infrastructure.",
+    weblink: "Weiterführender Link",
+    image: "<img src='church.jpeg'>",
+    lat:  -15.8395591, 
+    lng: -48.0211268,
+},
+
     {
         nr: 2,
         user: "Distribution of all facilities and living buildings in Águas Claras",
@@ -56,6 +58,7 @@ const GRUPPE3 = [{
         lat:  -15.837500, 
         lng: -48.016176,
     },
+
 
     {
         nr: 6,
@@ -114,7 +117,7 @@ const GRUPPE3 = [{
         weblink: "Weiterführender Link",
         image: "<img src='church.jpeg'>", 
         lat:  -15.837576, 
-        lng: --48.019855,
+        lng: -48.019855,
     },
 
     {
@@ -189,5 +192,6 @@ const GRUPPE3 = [{
         lat:  -15.841861, 
         lng: -48.024625,
     },
+
 
 ];
