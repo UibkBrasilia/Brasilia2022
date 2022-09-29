@@ -45,12 +45,12 @@ let overlays = {
 
 //  add overlays to layers
 let layerControl = L.control.layers({}, {
-    "<img src='icons/bus.png' /> Gruppe 1": overlays.Gruppe1,
-    "<img src='icons/einkaufswagen.png' /> Gruppe 2": overlays.Gruppe2,
-    "<img src='icons/beer.png' /> Gruppe 3": overlays.Gruppe3,
-    "<img src='icons/home.png' /> Gruppe 4": overlays.Gruppe4,
-    "<img src='icons/government.png' /> Gruppe 5": overlays.Gruppe5,
-    "<img src='icons/pointer.png' /> Gruppe 6": overlays.Gruppe6
+    "<img src='icons/group1icon.png' /> Gruppe 1": overlays.Gruppe1,
+    "<img src='icons/group2icon.png' /> Gruppe 2": overlays.Gruppe2,
+    "<img src='icons/group3icon.png' /> Gruppe 3": overlays.Gruppe3,
+    "<img src='icons/group4icon.png' /> Gruppe 4": overlays.Gruppe4,
+    "<img src='icons/group5icon.png' /> Gruppe 5": overlays.Gruppe5,
+    "<img src='icons/group6icon.png' /> Gruppe 6": overlays.Gruppe6
 }, {
     position: 'topright',
     collapsed: true,
@@ -77,23 +77,22 @@ var LeafIcon = L.Icon.extend({
 });
 
 var Gr1Icon = new LeafIcon({
-        iconUrl: 'icons/bus.png'
+        iconUrl: 'icons/group1icon.png'
     });
-    
     Gr2Icon = new LeafIcon({
-        iconUrl: 'icons/einkaufswagen.png'
+        iconUrl: 'icons/group2icon.png'
     });
     Gr3Icon = new LeafIcon({
-        iconUrl: 'icons/beer.png'
+        iconUrl: 'icons/group3icon.png'
     });
     Gr4Icon = new LeafIcon({
-        iconUrl: 'icons/home.png'
+        iconUrl: 'icons/group4icon.png'
     });
     Gr5Icon = new LeafIcon({
-        iconUrl: 'icons/government.png'
+        iconUrl: 'icons/group5icon.png'
     });
     Gr6Icon = new LeafIcon({
-        iconUrl: 'icons/pointer.png'
+        iconUrl: 'icons/group6icon.png'
     });
     
     
