@@ -6,7 +6,7 @@ const GRUPPE1 = [
         intro: "Untertitel",
         about: "Beschreibung",
         weblink: "Weiterführender Link",
-        image: "<img src='church.jpeg' />", 
+        image: "<img src='church.jpeg' height=\'20px\' width=\'20px\'>", 
         lat:  -15.80896, 
         lng: -47.94766,
     },

@@ -45,12 +45,12 @@ let overlays = {
 
 //  add overlays to layers
 let layerControl = L.control.layers({}, {
-    "<img src='icons/group1icon.png' /> Gruppe 1": overlays.Gruppe1,
-    "<img src='icons/group2icon.png' /> Gruppe 2": overlays.Gruppe2,
-    "<img src='icons/group3icon.png' /> Gruppe 3": overlays.Gruppe3,
-    "<img src='icons/group4icon.png' /> Gruppe 4": overlays.Gruppe4,
-    "<img src='icons/group5icon.png' /> Gruppe 5": overlays.Gruppe5,
-    "<img src='icons/group6icon.png' /> Gruppe 6": overlays.Gruppe6
+    "<img src='icons/group1icon.png' height=\'20px\' width=\'20px\'/> Gruppe 1": overlays.Gruppe1,
+    "<img src='icons/group2icon.png' height=\'20px\' width=\'20px\'/> Gruppe 2": overlays.Gruppe2,
+    "<img src='icons/group3icon.png' height=\'20px\' width=\'20px\'/> Gruppe 3": overlays.Gruppe3,
+    "<img src='icons/group4icon.png' height=\'20px\' width=\'20px\'/> Gruppe 4": overlays.Gruppe4,
+    "<img src='icons/group5icon.png' height=\'20px\' width=\'20px\'/> Gruppe 5": overlays.Gruppe5,
+    "<img src='icons/group6icon.png' height=\'20px\' width=\'20px\'/> Gruppe 6": overlays.Gruppe6,
 }, {
     position: 'topright',
     collapsed: true,
@@ -70,7 +70,7 @@ overlays.Gruppe6.addTo(map);
 //create icons
 var LeafIcon = L.Icon.extend({
     options: {
-        iconSize: [38, 38], // size of the icon
+        iconSize: [20, 20], // size of the icon
         iconAnchor: [16, 37], // point of the icon which will correspond to marker's location
         popupAnchor: [2, -38] // point from which the popup should open relative to the iconAnchor
     }
