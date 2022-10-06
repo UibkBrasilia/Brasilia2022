@@ -70,7 +70,7 @@ overlays.Gruppe6.addTo(map);
 //create icons
 var LeafIcon = L.Icon.extend({
     options: {
-        iconSize: [20, 20], // size of the icon
+        iconSize: [35, 35], // size of the icon
         iconAnchor: [16, 37], // point of the icon which will correspond to marker's location
         popupAnchor: [2, -38] // point from which the popup should open relative to the iconAnchor
     }
