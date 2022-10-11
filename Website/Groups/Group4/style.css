@@ -231,17 +231,21 @@
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+   border-bottom: 1px dotted black;
+}
+
+.tooltip-wrapper {
+  min-width: max-content;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
-  background-color: #555;
+  width: 500px; /*Breite der Box verändern*/
+  background-color: #11101de0;
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 5px 5px 5px 5px;
   position: absolute;
   z-index: 1;
   bottom: 125%;
@@ -255,7 +259,7 @@
   content: "";
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 10%; /*Position des Pfeils der Box verämdern*/
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
@@ -382,7 +386,14 @@ main{
 
 
 
-h1,h2,h3,h4,h5,h6{
+h1 {
+  font-size: 18px;
+  color: #11101d;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+h2,h3,h4,h5,h6{
   font-size: 16px;
   margin-top: 20px;
   margin-bottom: 5px;
