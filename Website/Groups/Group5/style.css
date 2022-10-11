@@ -227,7 +227,48 @@
 .sidebar .profile-details .job{
   font-size: 12px;
 }
-.home-section{
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*.home-section{
   position: relative;
   background: #E4E9F7;
   height: 100vh;
@@ -260,12 +301,12 @@
 }
 
 
-
-
 .sidebar.open ~ .home-section{
   left: 250px;
   width: calc(100% - 250px);
 }
+
+
 .home-section .titel{
   position: fixed;
   display: inline-block;
@@ -297,7 +338,7 @@
   line-height: 80px;
 }
 
-
+*/
 
 
 
@@ -321,3 +362,41 @@
     left: 0;
   }
 }
+
+header{
+ text-align: center;
+}
+
+header h8 {
+  font-size: 34px;
+  text-align: center;
+}
+
+main{
+  padding-left: 20em;
+  padding-right: 20em;
+  text-align: left;
+  font-size: 14px;
+  text-align: justify;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+} 
+
+
+/*
+p1,p2,p3,p4,p5,p7,p8{
+  font-size: 14px;
+  align-items: left;
+  margin-left: 15px;
+} 
+
+*/
+
+
+
