@@ -228,29 +228,132 @@
   font-size: 12px;
 }
 
+/* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
-.tooltip .tooltiptext {
+/* Popup container - can be anything you want */
+.popupSurvey {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popupSurvey .popuptextSurvey {
   visibility: hidden;
-  width: 120px;
+  width: 800px;
   background-color: #555;
   color: #fff;
-  text-align: center;
+  text-align: justify;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 8px 0;
   position: absolute;
   z-index: 1;
   bottom: 125%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -80px;
+}
+
+
+/* Toggle this class - hide and show the popup */
+.popupSurvey .showSurvey {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* Popup container - can be anything you want */
+.popupMapping {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popupMapping .popuptextMapping {
+  visibility: hidden;
+  width: 800px;
+  background-color: #555;
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+
+/* Toggle this class - hide and show the popup */
+.popupMapping .showMapping {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 800px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 25%;
+  left: 50%;
+  margin-left: -400px;
+
+  /* Fade in tooltip */
   opacity: 0;
   transition: opacity 0.3s;
 }
 
+/* Tooltip arrow */
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
@@ -262,6 +365,7 @@
   border-color: #555 transparent transparent transparent;
 }
 
+/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
@@ -397,6 +501,4 @@ p1,p2,p3,p4,p5,p7,p8{
 } 
 
 */
-
-
 

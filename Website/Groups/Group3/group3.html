@@ -115,28 +115,38 @@
  
   <p1> When Lucio Costa realised his vision of Brazil's new capital, 
     the architectural guiding principles were primarily of western-modern origin. 
-    These principles eventually led to the creation of more and more </p1><div class="tooltip">satellite cities<span class="tooltiptext"> Hallohallo</span></div>  
+    These principles eventually led to the creation of more and more </p1><div class="tooltip">satellite cities<span class="tooltiptext"> Satellite cities develop outside the boundaries of the capital and are urban structures without political autonomy, as they depend on the centre - in this case Plano Piloto/Brasília. They are not cities in the true sense, but administrative regions called Regiões Administrativas.</span></div>  
     <p1>around Brasília in the following decades, to compensate for the lack of infrastructure and housing options available 
     to the ever-growing population of the Federal District of Brazil. Águas Claras is one of the youngest
      administrative regions and was designed in the 1990s by architect and urban planner Paulo Zimbres, 
      with the aim of meeting the still steadily growing demand for living space. The aim was to create 
-     more living space on less land area by means of building high-rise complexes.19 Águas Claras is 
+     more living space on less land area by means of building high-rise complexes. Águas Claras is 
      currently one of the fastest growing urban areas in the Federal District and has been an independent 
-     administrative region since 20035, yet several questions arise when considering its development and 
+     administrative region since 2003, yet several questions arise when considering its development and 
      role within Brasilia: How does Águas Claras, which was planned in the 1990s, differ from the Plano 
      Piloto in terms of living, medical care and everyday supply? Is the period in which a planned city 
      is created decisive to the development of supply structures? How were the residents of Águas Claras 
      able to leave their mark on the space?</p1>
 
+     
      <h1>Living</h1>
-
      <p2>To understand how the living situation in Águas Claras can be explained, it must first be understood 
       that the planning of Águas Claras was based on a linear city model. This model is characterised by the 
       fact that the settlement in question is built along a straight line provided by transportation 
       infrastructure (in the case of Águas Claras, the metro). This results in an unlimited expansion of the
        settlement space or urban development along a linear path, as well as a close connection between 
        urban and natural spaces (such as the Parque Ecológico de Águas Claras) in the direction tangential 
-       to the main infrastructural axis.13,9,20 Mapping of a predefined area (fig. 1) shows that Águas 
+       to the main infrastructural axis. 
+       <div class="popupMapping" onclick="myFunctionMapping()"><b>Mapping</b><span class="popuptextMapping" id="popupMapping">
+        In general, a map is an overview of objects, their location, their spatial context, and their distribution patterns. As a further consequence, the representation within digital geographic information systems (GIS) serves the purpose that maps can be designed interactively and dynamically and combinations with photos, videos, analytical representations etc. are possible. In this project, spatial information from Águas Claras was collected, processed, evaluated and mapped. For the mapping, an approximately 2.5 km long section along the metro line of the linear city was divided into three sub-areas of roughly equal size, in which all buildings and shops were mapped analogously according to their use or function. Although such partial mapping may help to shed light on the use of the buildings within this mapping area, it cannot be used to draw conclusions about the entire satellite city as a whole. The basis for the map was a topographic map, in which basic elements like building outlines, the street network, and the mapping boundaries were drawn in advance. A mapping key was made in advance, which included numerous aspects of living, everyday life and medical care, with the added possibility of making new categories if necessary. The spatial reference is thus limited to quantitative local discreta. In addition, the number of storeys was noted for the residential buildings and the price ranges of restaurants were also rated subjectively. In the next step, the mapping key was generalised to better reflect the research questions, a legend was adapted, and the analogue mapping was digitised in QGIS 3.24. From the information obtained, it was then possible to generate several thematic maps that provide information about building use and also about the spatial distribution within the administrative region. This corresponds to an object-related, problem-oriented approach. OpenStreetMap Shapefiles „roads“, „residental“, „buildings“ and „railways“, which are free to use, were utilized for improved visual representation of the maps.
+        </span>
+       </div>
+       <script>
+       // When the user clicks on div, open the popup
+       function myFunctionMapping() {
+         var popup = document.getElementById("popupMapping");
+         popupMapping.classList.toggle("showMapping");
+       }</script> of a predefined area (fig. 1) shows that Águas 
        Claras presents itself as a highly condensed and verticalized city. The lowest buildings are six 
        storeys high. On average, most buildings have between eleven and twenty floors and the tallest 
        building has 30 floors. It seems that there is no clear concentration of particularly high or 
@@ -149,7 +159,16 @@
        explained by the concept of spatialisation of (in)security and space-oriented security policies. 
        These security strategies led to the creation of vertical gated communities (condomínios fechados 
        verticais) for the middle class, so that only condomínio-paying residents have access to the
-        apartment buildings and their communal amenities.5,6 A survey of residents of Águas Claras as 
+        apartment buildings and their communal amenities.5,6 A <div class="popupSurvey" onclick="myFunctionSurvey()"><b>survey</b><span class="popuptextSurvey" id="popupSurvey">
+          Survey types include the classic methods (in person, via telephone, and written correspondence), but also online surveys, which are considered a special form of written survey. In general, surveys are used to gather facts, opinions, knowledge, attitudes, or evaluations of people using standardised questions that can be either open or closed. The online survey is characterised above all by its time and cost-efficiency compared to classic survey methods. Further advantages are the high response rate and the easy sharing via e.g. social media.2,15 The surveys in this research project were completed in both analogue, written form in Águas Claras, and through the internet via the online survey tool LimeSurvey. Since the questions were identical, the answers from the analogue surveys were then combined with those from the online survey. This facilitated the subsequent evaluation. After cleaning the data of outliers and incomplete responses, the remaining 49 data sets were recoded into a numerical format and analysed in SPSS. This enabled descriptive statistics, frequencies, and correlations to be determined. The open-ended questions were evaluated qualitatively and used to substantiate the statements.
+          </span>
+         </div>
+         <script>
+         // When the user clicks on div, open the popup
+         function myFunctionSurvey() {
+           var popup = document.getElementById("popupSurvey");
+           popupSurvey.classList.toggle("showSurvey");
+         }</script> of residents of Águas Claras as 
         well as interviews with experts revealed the housing situation inside the apartment buildings: 
         the value or the rental price of the flat increases with the verticality. That means that flats 
         on the upper floors of a building, which may have the same floor plan as the flats on the lowest 
