@@ -250,16 +250,16 @@
   z-index: 1;
   bottom: 125%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -250px;
   opacity: 0;
   transition: opacity 0.3s;
 }
 
 .tooltip .tooltiptext::after {
   content: "";
-  position: absolute;
+  position:absolute;
   top: 100%;
-  left: 10%; /*Position des Pfeils der Box verämdern*/
+  left: 50%; /*Position des Pfeils der Box verämdern*/
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
