@@ -119,7 +119,8 @@ for (let entry of GRUPPE1) {
         <h4>Adresse: ${entry.Adresse}</h4>
         <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
         `, {
-        maxHeight: 310
+        maxHeight: 310,
+        className: 'popupstyle',
     }).addTo(overlays.Gruppe1);
 }
 
