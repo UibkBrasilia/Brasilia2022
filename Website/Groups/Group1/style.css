@@ -388,7 +388,10 @@ h1,h2,h3,h4,h5,h6{
   margin-bottom: 5px;
 } 
 
-
+p10{
+  font-size: 9px;
+  align-items: left;
+}
 /*
 p1,p2,p3,p4,p5,p7,p8{
   font-size: 14px;
