@@ -120,6 +120,7 @@ for (let entry of GRUPPE1) {
         `, {
         maxHeight: 310,
         minWidth: 250,
+        maxWidth: 500,
     }).addTo(overlays.Gruppe1);
 }
 
