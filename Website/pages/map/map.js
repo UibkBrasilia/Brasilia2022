@@ -116,7 +116,7 @@ for (let entry of GRUPPE1) {
         <h3>${entry.intro}</h3>
         <h4>${entry.image}</h4>
         <h4>${entry.about}</h4>
-        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
+        <p><a href="/Website/Groups/Group1/group1.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
         `, {
         maxHeight: 310,
         minWidth: 250,
@@ -133,7 +133,7 @@ for (let entry of GRUPPE2) {
         <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
-        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
+        <p><a href="/Website/Groups/Group2/group2.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
         `, {
         maxHeight: 310,
         minWidth: 250,
@@ -150,7 +150,7 @@ for (let entry of GRUPPE3) {
         <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
-        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
+        <p><a href="/Website/Groups/Group3/group3.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
         `, {
         maxHeight: 310,
         minWidth: 250,
@@ -167,7 +167,7 @@ for (let entry of GRUPPE4) {
         <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
-        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
+        <p><a href="/Website/Groups/Group4/group4.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
         `, {
         maxHeight: 310
     }).addTo(overlays.Gruppe4);
@@ -199,7 +199,7 @@ for (let entry of GRUPPE6) {
         <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
-        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
+        <p><a href="/Website/Groups/Group6/group6.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
         `, {
         maxHeight: 310
     }).addTo(overlays.Gruppe6);
