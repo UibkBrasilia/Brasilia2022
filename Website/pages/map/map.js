@@ -72,7 +72,7 @@ var LeafIcon = L.Icon.extend({
     options: {
         iconSize: [35, 35], // size of the icon
         iconAnchor: [16, 37], // point of the icon which will correspond to marker's location
-        popupAnchor: [2, -38] // point from which the popup should open relative to the iconAnchor
+        popupAnchor: [2, -37] // point from which the popup should open relative to the iconAnchor
     }
 });
 
@@ -121,6 +121,7 @@ for (let entry of GRUPPE1) {
         maxHeight: 310,
         minWidth: 250,
         maxWidth: 500,
+        autoPan: true,
     }).addTo(overlays.Gruppe1);
 }
 
