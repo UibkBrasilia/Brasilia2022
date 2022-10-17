@@ -118,10 +118,18 @@
     <p1> When Lucio Costa realised his vision of Brazil's new capital,
       the architectural guiding principles were primarily of western-modern origin.
       These principles eventually led to the creation of more and more </p1>
-    <div class="tooltip">satellite cities<span class="tooltiptext"> Satellite cities develop outside the boundaries of
+      <div class="popup1" onclick="myFunction1()">satellite cities<span class="popuptext1"
+        id="popup1"> Satellite cities develop outside the boundaries of
         the capital and are urban structures without political autonomy, as they depend on the centre - in this case
         Plano Piloto/Brasília. They are not cities in the true sense, but administrative regions called Regiões
         Administrativas.</span></div>
+        <script>
+          // When the user clicks on div, open the popup
+          function myFunction1() {
+            var popup = document.getElementById("popup1");
+            popup1.classList.toggle("show1");
+          }
+        </script>
     <p1>around Brasília in the following decades, to compensate for the lack of infrastructure and housing options
       available
       to the ever-growing population of the Federal District of Brazil. Águas Claras is one of the youngest
@@ -143,8 +151,9 @@
       infrastructure (in the case of Águas Claras, the metro). This results in an unlimited expansion of the
       settlement space or urban development along a linear path, as well as a close connection between
       urban and natural spaces (such as the Parque Ecológico de Águas Claras) in the direction tangential
-      to the main infrastructural axis.
-      <div class="popupMapping" onclick="myFunctionMapping()"><b>Mapping</b><span class="popuptextMapping"
+      to the main infrastructural axis. <a href="#Mapping">Mapping</a>
+      
+      <!--<div class="popupMapping" onclick="myFunctionMapping()"><b>Mapping</b><span class="popuptextMapping"
           id="popupMapping">
           In general, a map is an overview of objects, their location, their spatial context, and their distribution
           patterns. As a further consequence, the representation within digital geographic information systems (GIS)
@@ -173,7 +182,7 @@
         function myFunctionMapping() {
           var popup = document.getElementById("popupMapping");
           popupMapping.classList.toggle("showMapping");
-        }
+        }-->
       </script> of a predefined area (fig. 1) shows that Águas
       Claras presents itself as a highly condensed and verticalized city.
       <figure>
@@ -353,7 +362,7 @@
 
       <h2>Methods</h2>
 
-      <h1>Mapping</h1>
+      <h1 id="Mapping">Mapping</h1>
       <p>In general, a map is an overview of objects, their location, their spatial context, and their distribution
         patterns. As a further consequence, the representation within digital geographic information systems (GIS)
         serves the purpose that maps can be designed interactively and dynamically and combinations with photos, videos,
