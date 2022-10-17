@@ -276,7 +276,7 @@
 }
 
 /* Popup container - can be anything you want */
-.popupMapping {
+.popup1 {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
@@ -288,9 +288,9 @@
 }
 
 /* The actual popup */
-.popupMapping .popuptextMapping {
+.popup1 .popuptext1 {
   visibility: hidden;
-  width: 800px;
+  width: 400px;
   background-color: #555;
   color: #fff;
   text-align: justify;
@@ -298,14 +298,14 @@
   padding: 8px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
+  top: 125%;
   left: 50%;
   margin-left: -80px;
 }
 
 
 /* Toggle this class - hide and show the popup */
-.popupMapping .showMapping {
+.popup1 .show1 {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
@@ -536,11 +536,24 @@ main{
 
 
 
-h1,h2,h3,h4,h5,h6{
+h1{
   font-size: 16px;
   margin-top: 20px;
   margin-bottom: 5px;
 } 
+
+h2{
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+} 
+
+p10 {
+  font-size: 9px;
+  align-items: left;
+}
+
+
 
 
 /*
