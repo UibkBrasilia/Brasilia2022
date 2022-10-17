@@ -389,6 +389,12 @@ h1,h2,h3,h4,h5,h6{
 } 
 
 
+p9{
+  font-size: 14px;
+  align-items: left;
+  font-weight: bold
+}
+
 /*
 p1,p2,p3,p4,p5,p7,p8{
   font-size: 14px;
