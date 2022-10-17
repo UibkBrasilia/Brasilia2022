@@ -120,6 +120,7 @@ for (let entry of GRUPPE1) {
         <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
         `, {
         maxHeight: 310,
+        minWidth: 250,
         className: 'popupstyle',
     }).addTo(overlays.Gruppe1);
 }
@@ -137,7 +138,8 @@ for (let entry of GRUPPE2) {
         <h4>Adresse: ${entry.Adresse}</h4>
         <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
         `, {
-        maxHeight: 310
+        maxHeight: 310,
+        minWidth: 250,
     }).addTo(overlays.Gruppe2);
 }
 
@@ -155,7 +157,8 @@ for (let entry of GRUPPE3) {
         <h4><i class="far fa-envelope mr-3" style="margin-right: 0.3em"></i><a href=" mailto:${entry.Mail}" target="_blank">${entry.Mail}</a></h4>
         <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
         `, {
-        maxHeight: 310
+        maxHeight: 310,
+        minWidth: 250,
     }).addTo(overlays.Gruppe3);
 }
 
