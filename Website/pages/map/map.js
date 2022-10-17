@@ -116,12 +116,10 @@ for (let entry of GRUPPE1) {
         <h3>${entry.intro}</h3>
         <h4>${entry.image}</h4>
         <h4>${entry.about}</h4>
-        <h4>Adresse: ${entry.Adresse}</h4>
-        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
+        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
         `, {
         maxHeight: 310,
         minWidth: 250,
-        className: 'popupstyle',
     }).addTo(overlays.Gruppe1);
 }
 
@@ -135,8 +133,7 @@ for (let entry of GRUPPE2) {
         <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
-        <h4>Adresse: ${entry.Adresse}</h4>
-        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
+        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
         `, {
         maxHeight: 310,
         minWidth: 250,
@@ -152,10 +149,8 @@ for (let entry of GRUPPE3) {
     mrk.bindPopup(`<h1>${entry.user}<h1>
         <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
-        <h4>Adresse: ${entry.Adresse}</h4>
         <h4>${entry.image}</h4>
-        <h4><i class="far fa-envelope mr-3" style="margin-right: 0.3em"></i><a href=" mailto:${entry.Mail}" target="_blank">${entry.Mail}</a></h4>
-        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
+        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
         `, {
         maxHeight: 310,
         minWidth: 250,
@@ -172,8 +167,7 @@ for (let entry of GRUPPE4) {
         <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
-        <h4>Adresse: ${entry.Adresse}</h4>
-        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
+        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
         `, {
         maxHeight: 310
     }).addTo(overlays.Gruppe4);
@@ -188,10 +182,11 @@ for (let entry of GRUPPE5) {
         <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
-        <h4>Adresse: ${entry.Adresse}</h4>
-        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
+        <p><a href="/Website/Groups/Group5/group5.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
         `, {
-        maxHeight: 310
+        maxHeight: 650,
+        keepInView: true,
+        minWidth: 250,
     }).addTo(overlays.Gruppe5);
 }
 
@@ -204,8 +199,7 @@ for (let entry of GRUPPE6) {
         <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
-        <h4>Adresse: ${entry.Adresse}</h4>
-        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Weiter zur Organisation</a></p>
+        <p><a href="${entry.weblink}" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
         `, {
         maxHeight: 310
     }).addTo(overlays.Gruppe6);
