@@ -297,7 +297,17 @@
   line-height: 80px;
 }
 
+h1 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
 
+p1 {
+  font-size: 14px;
+  align-items: left;
+  font-weight: bold
+}
 
 
 
