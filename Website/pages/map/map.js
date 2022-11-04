@@ -40,7 +40,6 @@ let overlays = {
     Gruppe3: L.markerClusterGroup(),
     Gruppe4: L.markerClusterGroup(),
     Gruppe5: L.markerClusterGroup(),
-    Gruppe6: L.markerClusterGroup(),
 };
 
 //  add overlays to layers
