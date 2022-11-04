@@ -1,4 +1,5 @@
-const GRUPPE3 = [{
+const GRUPPE3 = [
+    {
         nr: 1,
         user: "Everday life in Águas Claras",
         intro: "Condomínios fechados verticais",

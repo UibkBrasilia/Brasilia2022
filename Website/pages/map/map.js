@@ -189,7 +189,6 @@ for (let entry of GRUPPE5) {
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <p><a href="/Website/Groups/Group5/group5.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
-        <p><a href=Website/pictures/pics5/pics5.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Large Pictures</a></p>
         `, {
         maxHeight: 500,
         minWidth: 250,
