@@ -417,85 +417,6 @@
 }
 
 
-
-
-
-
-
-/*.home-section{
-  position: relative;
-  background: #E4E9F7;
-  height: 100vh;
-  left: 260px;
-  width: calc(100% - 260px);
-  transition: all 0.5s ease;
-}
-
-.sidebar.close ~ .home-section{
-  left: 78px;
-  width: calc(100% - 78px);
-}
-.home-section .home-content{
-  height: 60px;
-  display: flex;
-  align-items: center;
-}
-.home-section .home-content .bx-menu,
-.home-section .home-content .text{
-  color: #11101d;
-  font-size: 35px;
-}
-.home-section .home-content .bx-menu{
-  margin: 0 15px;
-  cursor: pointer;
-}
-.home-section .home-content .text{
-  font-size: 26px;
-  font-weight: 600;
-}
-
-
-.sidebar.open ~ .home-section{
-  left: 250px;
-  width: calc(100% - 250px);
-}
-
-
-.home-section .titel{
-  position: fixed;
-  display: inline-block;
-  color: #0d3417;
-  font-size: 35px;
-  font-weight: 500;
-  margin: 18px;
-  height: 50px;
-  line-height: 50px;
-}
-
-.home-section .sub_titel{
-  position: fixed;  
-  display: inline-block;
-  color: #000000;
-  font-size: 20px;
-  font-weight: 400;
-  margin: 18px;
-  height: 80px;
-  line-height: 80px;
-}
-
-.home-section .text{  
-  color: #000000;
-  font-size: 15px;
-  font-weight: 200;
-  margin: 18px;
-  height: 80px;
-  line-height: 80px;
-}
-
-*/
-
-
-
 @media (max-width: 400px) {
   .sidebar.close .nav-links li .sub-menu{
     display: none;
@@ -552,16 +473,3 @@ p10 {
   font-size: 9px;
   align-items: left;
 }
-
-
-
-
-/*
-p1,p2,p3,p4,p5,p7,p8{
-  font-size: 14px;
-  align-items: left;
-  margin-left: 15px;
-} 
-
-*/
-
