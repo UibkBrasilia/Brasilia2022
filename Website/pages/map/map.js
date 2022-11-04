@@ -166,7 +166,6 @@ for (let entry of GRUPPE4) {
         icon: Gr4Icon
     });
     mrk.bindPopup(`<h1>${entry.user}<h1>
-        <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <p><a href="/Website/Groups/Group4/group4.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
