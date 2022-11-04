@@ -40,17 +40,15 @@ let overlays = {
     Gruppe3: L.markerClusterGroup(),
     Gruppe4: L.markerClusterGroup(),
     Gruppe5: L.markerClusterGroup(),
-    Gruppe6: L.markerClusterGroup(),
 };
 
 //  add overlays to layers
 let layerControl = L.control.layers({}, {
-    "<img src='icons/group1icon.png' height=\'20px\' width=\'20px\'/> Gruppe 1": overlays.Gruppe1,
-    "<img src='icons/group2icon.png' height=\'20px\' width=\'20px\'/> Gruppe 2": overlays.Gruppe2,
-    "<img src='icons/group3icon.png' height=\'20px\' width=\'20px\'/> Gruppe 3": overlays.Gruppe3,
-    "<img src='icons/group4icon.png' height=\'20px\' width=\'20px\'/> Gruppe 4": overlays.Gruppe4,
-    "<img src='icons/group5icon.png' height=\'20px\' width=\'20px\'/> Gruppe 5": overlays.Gruppe5,
-    "<img src='icons/group6icon.png' height=\'20px\' width=\'20px\'/> Gruppe 6": overlays.Gruppe6,
+    "<img src='icons/group1icon.png' height=\'20px\' width=\'20px\'/> Urban Living": overlays.Gruppe1,
+    "<img src='icons/group2icon.png' height=\'20px\' width=\'20px\'/> Leisure & Open Space": overlays.Gruppe2,
+    "<img src='icons/group3icon.png' height=\'20px\' width=\'20px\'/> Daily Life: Águas Claras": overlays.Gruppe3,
+    "<img src='icons/group4icon.png' height=\'20px\' width=\'20px\'/> Daily Life: Plano Piloto": overlays.Gruppe4,
+    "<img src='icons/group5icon.png' height=\'20px\' width=\'20px\'/> Mobility": overlays.Gruppe5,
 }, {
     position: 'topright',
     collapsed: true,
@@ -64,7 +62,6 @@ overlays.Gruppe2.addTo(map);
 overlays.Gruppe3.addTo(map);
 overlays.Gruppe4.addTo(map);
 overlays.Gruppe5.addTo(map);
-overlays.Gruppe6.addTo(map);
 
 
 //create icons
@@ -91,10 +88,7 @@ var Gr1Icon = new LeafIcon({
     Gr5Icon = new LeafIcon({
         iconUrl: 'icons/group5icon.png'
     });
-    Gr6Icon = new LeafIcon({
-        iconUrl: 'icons/group6icon.png'
-    });
-    
+
     
 
 
@@ -113,12 +107,12 @@ for (let entry of GRUPPE1) {
         icon: Gr1Icon
     });
     mrk.bindPopup(`<h1>${entry.user}<h1>
-        <h3>${entry.intro}</h3>
         <h4>${entry.image}</h4>
         <h4>${entry.about}</h4>
         <p><a href="/Website/Groups/Group1/group1.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
+        <p><a href=Website/pictures/pics1/pics1.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Large Pictures</a></p>
         `, {
-        maxHeight: 310,
+        maxHeight: 500,
         minWidth: 250,
         maxWidth: 500,
         autoPan: true,
@@ -136,9 +130,12 @@ for (let entry of GRUPPE2) {
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <p><a href="/Website/Groups/Group2/group2.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
+        <p><a href=Website/pictures/pics2/pics2.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Large Pictures</a></p>
         `, {
-        maxHeight: 310,
+        maxHeight: 500,
         minWidth: 250,
+        maxWidth: 500,
+        autoPan: true,
     }).addTo(overlays.Gruppe2);
 }
 
@@ -153,9 +150,12 @@ for (let entry of GRUPPE3) {
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <p><a href="/Website/Groups/Group3/group3.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
+        <p><a href=Website/pictures/pics3/pics3.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Large Pictures</a></p>
         `, {
-        maxHeight: 310,
+        maxHeight: 500,
         minWidth: 250,
+        maxWidth: 500,
+        autoPan: true,
     }).addTo(overlays.Gruppe3);
 }
 
@@ -170,8 +170,12 @@ for (let entry of GRUPPE4) {
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <p><a href="/Website/Groups/Group4/group4.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
+        <p><a href=Website/pictures/pics4/pics4.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Large Pictures</a></p>
         `, {
-        maxHeight: 310
+        maxHeight: 500,
+        minWidth: 250,
+        maxWidth: 500,
+        autoPan: true,
     }).addTo(overlays.Gruppe4);
 }
 
@@ -185,26 +189,13 @@ for (let entry of GRUPPE5) {
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <p><a href="/Website/Groups/Group5/group5.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
+        <p><a href=Website/pictures/pics5/pics5.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Large Pictures</a></p>
         `, {
-        maxHeight: 650,
-        keepInView: true,
+        maxHeight: 500,
         minWidth: 250,
+        maxWidth: 500,
+        autoPan: true,
     }).addTo(overlays.Gruppe5);
-}
-
-//tear data from Gruppe6.js and add to map with marker and popup 
-for (let entry of GRUPPE6) {
-    let mrk = L.marker([entry.lat, entry.lng], {
-        icon: Gr6Icon
-    });
-    mrk.bindPopup(`<h1>${entry.user}<h1>
-        <h3>${entry.intro}</h3>
-        <h4>${entry.about}</h4>
-        <h4>${entry.image}</h4>
-        <p><a href="/Website/Groups/Group6/group6.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
-        `, {
-        maxHeight: 310
-    }).addTo(overlays.Gruppe6);
 }
 
 // Leaflet hash
