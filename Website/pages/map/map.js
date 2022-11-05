@@ -112,10 +112,10 @@ for (let entry of GRUPPE1) {
         <h4>${entry.image}</h4>
         <h4>${entry.about}</h4>
         <p><a href="/Website/Groups/Group1/group1.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
-        <p><a href=Website/pictures/pics1/pics1.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Large Pictures</a></p>
+        <h4>${entry.zoompic}</h4>
         `, {
         maxHeight: 500,
-        minWidth: 250,
+        minWidth: 500,
         maxWidth: 500,
         autoPan: true,
     }).addTo(overlays.Gruppe1);
@@ -131,7 +131,6 @@ for (let entry of GRUPPE2) {
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <p><a href="/Website/Groups/Group2/group2.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
-        <h4>${entry.zoompic}</h4>
         `, {
         maxHeight: 500,
         minWidth: 450,
@@ -170,7 +169,6 @@ for (let entry of GRUPPE4) {
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <p><a href="/Website/Groups/Group4/group4.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
-        <p><a href=Website/pictures/pics4/pics4.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Large Pictures</a></p>
         `, {
         maxHeight: 500,
         minWidth: 250,

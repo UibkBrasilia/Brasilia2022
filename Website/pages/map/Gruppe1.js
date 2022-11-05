@@ -192,13 +192,17 @@ const GRUPPE1 = [
         nr: 22,
         user: "Rodoviária",
         about: "The Rodoviária (bus station) is used almost exclusively by adults who are informally yet predominantly smartly-dressed. Overall, a high frequency of people can be observed, with more during the week than at weekends. The people observed use the space for mobility purposes (see Mobility in Brasília). Consumption is only a secondary purpose. There is no perceivable subculture, but the informal sector is dominant in this space, as shown, as shown in the mapping. Source: own figure, 12.08.2022.",
+<<<<<<< HEAD
         image: "<img src='Appropriation_space_Rodoviária_mini.jpg'/>",
         zoom:  "<p><a href='Website/pictures/pics1/pics1.html' target='_blank'><i class='fas fa-external-link-alt mr-3' style='margin-right: 0.3em'></i> Large Pictures</a></p>",
+=======
+        image: "<img src='Appropriation_space_Rodoviária_mini.jpg/>",
+>>>>>>> c34ac1dc23acd612f3ae361ca381d4a0aeed6aae
         lat: -15.791397, 
         lng: -47.881945,
     },
 
-{
+    {
         nr: 22,
         user: "Rodoviária",
         about: "Busses departing from sectors C and D serve the urban area of Brasília (Distrito Federal), while those in sectors A and B serve more distant destinations. As can be seen in the video, the section of sector B is equipped with an additional waiting hall (accessible with ticket). In addition, the passenger frequency here is higher in the afternoon, yet generally slightly lower than it is in sectors C and D (see photo). Sources: own video, own picture, 26.04.2022.",
