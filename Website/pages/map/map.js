@@ -53,6 +53,7 @@ let layerControl = L.control.layers({}, {
     position: 'topright',
     collapsed: true,
     maxHeight:38,
+    autoPan: true,
 }).addTo(map);
 
 
@@ -67,6 +68,7 @@ overlays.Gruppe5.addTo(map);
 //create icons
 var LeafIcon = L.Icon.extend({
     options: {
+        autoPan: true,
         iconSize: [35, 35], // size of the icon
         iconAnchor: [16, 37], // point of the icon which will correspond to marker's location
         popupAnchor: [2, -37] // point from which the popup should open relative to the iconAnchor
@@ -126,7 +128,6 @@ for (let entry of GRUPPE2) {
         icon: Gr2Icon
     });
     mrk.bindPopup(`<h1>${entry.user}<h1>
-        <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <p><a href="/Website/Groups/Group2/group2.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
