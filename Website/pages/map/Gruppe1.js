@@ -213,7 +213,7 @@ const GRUPPE1 = [
         user: "Rodoviária",
         about: "The Rodoviária (bus station) is used almost exclusively by adults who are informally yet predominantly smartly-dressed. Overall, a high frequency of people can be observed, with more during the week than at weekends. The people observed use the space for mobility purposes (see Mobility in Brasília). Consumption is only a secondary purpose. There is no perceivable subculture, but the informal sector is dominant in this space, as shown, as shown in the mapping. Source: own figure, 12.08.2022.",
         image: "<img src='Appropriation_space_Rodoviária_mini.jpg'/>",
-        zoompic:  "<p><a href='Website/pictures/pics1/pics1_1.html' target='_blank'><i class='fas fa-external-link-alt mr-3' style='margin-right: 0.3em'></i> Large Pictures</a></p>",
+        zoompic: "<a href='/Website/pictures/pics1/pics1_1.html' target='_blank'><i class='fas fa-external-link-alt mr-3' style='margin-right: 0.3em'></i> Large Pictures</a>",
         lat: -15.791397, 
         lng: -47.881945,
     },
