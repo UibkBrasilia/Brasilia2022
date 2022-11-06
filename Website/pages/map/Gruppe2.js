@@ -3,7 +3,7 @@ const GRUPPE2 = [
         nr: 1,
         user: "Parque da Cidade",
         about: "The Parque da Cidade offers extensive green and blue spaces and thus plays an important role in the recreational use of the population. With its 420 ha, the city park offers space for various sports activities, barbecue areas, playgrounds for children, a lake and much more. This makes it a popular meeting place among all age groups but unfortunately not all income groups. Since the park is located in the middle of the Plano Piloto and people coming from the satellite cities barely find their way to the center for leisure time, because there is too much time and money spent on the way to get there. On the other hand, people from the Plano Piloto take advantage of the location as it is both a suitable spot for after-work activities during the week and a place to linger on weekends.",
-        image: "<img src='parquedacidade.jpg' />", 
+        image: "<img src='parquedacidade.jpeg' />", 
         lat: -15.80238381232582, 
         lng: -47.91231095558836
     },
@@ -35,7 +35,7 @@ const GRUPPE2 = [
         nr: 5,
         user: "Appropriation of public space",
         about: "At the Morro da Asa Delta park, there was a specific conflict of appropriation. Due to the rich residential area, surrounding the Lago Paranoá, it was also the upper class population who was partially trying to appropriate public space next to their parcels to get direct and private access to the lake. This is not only an illegal action, it also threatens the democratic access to the lake as well as its use during leisure activities for people who are living outside the bordering quarters. Furthermore, it underlines the process and the degree of segregation in Brasília.",
-        image: "<img src='asadelta.jpg' />", 
+        image: "<img src='asadelta.jpeg' />", 
         lat:   -15.837380, 
         lng: -47.864474,
     },
