@@ -160,7 +160,7 @@ const GRUPPE5 = [
         about: "From the TV tower you have a wonderful view of the streets in the center of plano piloto. The cars on the left are driving towards the photo shooting position and the cars on the right are driving in the other direction. Source: own picture, 12.04.2022.",
         weblink: "Weiterführender Link",
         image: "<img src='roadcourse_g5.jpg' />", 
-        lat:  -15.7900591, 
-        lng: -47.8943091,
+        lat:  -15.790669447558148, 
+        lng: -47.892925828070815,
     },
 ];
