@@ -46,8 +46,8 @@ const GRUPPE5 = [
         about: "The city's government is however aware of this problem and is working on solutions to make public transport safer, espacially for women. The metro has a wagon which is designated for woman only. They have their one waiting area which is separated from the rest of the platform. The long distances in between bus stops can mean that some people have to walk a very large distance home from the bus stop. Especially at night, this can be dangerous for woman while walking down a badly lit street. After 10 p.m. woman can ask the bus driver to drop them off in between bus stops if this makes their walk home shorter and so safer. These are two examples in which the government tries increasing the safety and so promoting the usage of public transportation. Source: own picture, 12.04.2022.",
         weblink: "Weiterführender Link",
         image: "<img src='metro_women_g5.jpg'>", 
-        lat:  -15.8402316, 
-        lng: -47.0279370,
+        lat:  -15.8402910, 
+        lng: -48.0283089,
     },
  
 {

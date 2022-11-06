@@ -53,6 +53,7 @@ let layerControl = L.control.layers({}, {
     position: 'topright',
     collapsed: true,
     maxHeight:38,
+    autoPan: true,
 }).addTo(map);
 
 
@@ -67,6 +68,7 @@ overlays.Gruppe5.addTo(map);
 //create icons
 var LeafIcon = L.Icon.extend({
     options: {
+        autoPan: true,
         iconSize: [35, 35], // size of the icon
         iconAnchor: [16, 37], // point of the icon which will correspond to marker's location
         popupAnchor: [2, -37] // point from which the popup should open relative to the iconAnchor
@@ -110,10 +112,10 @@ for (let entry of GRUPPE1) {
         <h4>${entry.image}</h4>
         <h4>${entry.about}</h4>
         <p><a href="/Website/Groups/Group1/group1.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
-        <p><a href=Website/pictures/pics1/pics1.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Large Pictures</a></p>
+        <p>${entry.zoompic}</p>
         `, {
         maxHeight: 500,
-        minWidth: 250,
+        minWidth: 500,
         maxWidth: 500,
         autoPan: true,
     }).addTo(overlays.Gruppe1);
@@ -126,14 +128,12 @@ for (let entry of GRUPPE2) {
         icon: Gr2Icon
     });
     mrk.bindPopup(`<h1>${entry.user}<h1>
-        <h3>${entry.intro}</h3>
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <p><a href="/Website/Groups/Group2/group2.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
-        <p><a href=Website/pictures/pics2/pics2.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Large Pictures</a></p>
         `, {
         maxHeight: 500,
-        minWidth: 250,
+        minWidth: 450,
         maxWidth: 500,
         autoPan: true,
     }).addTo(overlays.Gruppe2);
@@ -150,7 +150,7 @@ for (let entry of GRUPPE3) {
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <p><a href="/Website/Groups/Group3/group3.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
-        <p><a href=Website/pictures/pics3/pics3.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Large Pictures</a></p>
+        <p>${entry.zoompic}</p>
         `, {
         maxHeight: 500,
         minWidth: 250,
@@ -169,7 +169,6 @@ for (let entry of GRUPPE4) {
         <h4>${entry.about}</h4>
         <h4>${entry.image}</h4>
         <p><a href="/Website/Groups/Group4/group4.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
-        <p><a href=Website/pictures/pics4/pics4.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Large Pictures</a></p>
         `, {
         maxHeight: 500,
         minWidth: 250,
