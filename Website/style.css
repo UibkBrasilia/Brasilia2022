@@ -465,7 +465,7 @@ h1{
 
 h2{
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 5px;
 } 
 
@@ -474,3 +474,10 @@ p10 {
   align-items: left;
 }
 
+.quelle {
+  text-align: left;
+  font-size: 0.8em;
+  padding-left: 1em;
+  margin-top: -3em;
+  color: #fff;
+}
