@@ -112,7 +112,7 @@ for (let entry of GRUPPE1) {
         <h4>${entry.image}</h4>
         <h4>${entry.about}</h4>
         <p><a href="/Website/Groups/Group1/group1.html" target="_blank"><i class="fas fa-external-link-alt mr-3" style="margin-right: 0.3em"></i> Group Link</a></p>
-        <h4>${entry.zoompic}</h4>
+        <p>${entry.zoompic}</p>
         `, {
         maxHeight: 500,
         minWidth: 500,
