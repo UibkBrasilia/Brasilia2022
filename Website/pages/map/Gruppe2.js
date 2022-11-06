@@ -12,8 +12,8 @@ const GRUPPE2 = [
         user: "Eixo Monumental",
         about: "The monumental axis Eixo Monumental in the Plano Piloto spans a 10 km long open space that stretches between the railway station and the government buildings. The axis integrates different uses, squares and open spaces and combines them as a representative space. These include for example the Jardim Burle Marx below the TV Tower and the concrete platforms at the National Museum and the Cathedral. At the eastern end you will find the Square of the Three Powers. By symbolically representing the three powers - legislative, executive and judicial - Oscar Niemeyer wanted to portray Brazil's democratic attitude. Parts of the approximately 250 m wide green axis are also used for temporary events. There, according to the plan, the extremely large and wide open space was considered an area for parade marches, as the immense distances and tangential motorways meant that it could hardly be used in an everyday sense. Therefore, this open space conveys a rather anarchistic feeling and its homogeneous construction of turf and stone emphasises its intimidating infinity. In our study the interviews conducted with students made clear, that people use public space differently to what it was meant to be. A specific example is playing rugby at the big green area at the Eixo Monumental, the central axis, even though the area was originally not planned for free public use. This shows, that planned as well as not planned appropriation differs from initial plans. One student, who took part in a photointerview also said, that the conservation of the yard could be a lot better and the people, who live nearby, are not very welcoming to citizens from satellite cities. ",
         image: "<img src='rugby.jpg'>", 
-        lat: -15.781965624186103,  
-        lng: -47.92035136942311
+        lat: -15.797730817014807, 
+        lng: -47.87052670388993,
     },
     {
         nr: 3,
@@ -85,8 +85,8 @@ const GRUPPE2 = [
         user: " Jardim Botânico",
         about: " The Estação Ecológica Jardim Botânico de Brasília is an important area for the conservation and study of the Cerrado. In 1991, the Ecological Station of the Botanical Garden was expanded by about 3,800 ha, making it the largest botanical garden in the world located in a savanna (total 4,431.83 ha). The area contains all the different species of Cerrado phytophysiognomies and different animals characteristic of the regional fauna. However, only a part of the park is open to the public. Moreover, the park is difficult for most people to reach without a car. Therefore, it is seen by many residents as a park built specifically for the neighborhood of the Jardim Botânico.",
         image: "<img src=' jardim_botânico.jpg' />", 
-        lat: -15.860569227060147,
-        lng: -47.828687632455676,
+        lat: -15.873968712380686, 
+        lng: -47.83431465435166,
     },
 {
  	  nr: 12,
