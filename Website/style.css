@@ -440,11 +440,13 @@
 
 header{
  text-align: center;
+ 
 }
 
 header h8 {
   font-size: 34px;
   text-align: center;
+  
 }
 
 main{
@@ -471,7 +473,7 @@ h2{
 
 p10 {
   font-size: 9px;
-  align-items: left;
+  align-items:center;
 }
 
 .quelle {
