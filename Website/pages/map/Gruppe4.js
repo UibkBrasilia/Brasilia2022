@@ -129,7 +129,7 @@ const GRUPPE4 = [
     },
     {
         nr: 17,
-        user: "Atacadao",
+        user: "Atacadão",
         about: "This hypermarket is a typical example for grocery shopping in the Plano Piloto. They are mostly located around the outlines of Asa Sul and Asa Norte. People reach it by car to do their weekly shopping. If you want to learn more about the Comércio Locais, the Superquadras and everyday life in the Plano Piloto click below. Source: own picture, 24.04.2022.",
         image: "<img src='atacadao.jpg' />", 
         lat:  -15.73505,
