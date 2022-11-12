@@ -26,7 +26,7 @@ const GRUPPE4 = [
     {
         nr: 4,
         user: "Iguatemi Brasília",
-        about: "The Iguatemi Brasília shopping centre was inaugurated in 2010 and is located in the northern extension of the Lago Norte peninsula. This part of the city is houses higher-income households, which shows at the Iguatemi Brasília. The shopping centre hosts a variety of exclusive boutiques and specialized food shops. The mall is secured and not accessible by foot.",
+        about: "The Iguatemi Brasília shopping centre was inaugurated in 2010 and is located in the northern extension of the Lago Norte peninsula. This part of the city is houses higher-income households, which shows at the Iguatemi Brasília. The shopping centre hosts a variety of exclusive boutiques and specialized food shops. The mall is secured and not accessible by foot. Source: own picture",
         image: "<img style='width:400px' src='iguatemi.jpeg' />", 
         lat:  -15.72077, 
         lng: -47.88592,
