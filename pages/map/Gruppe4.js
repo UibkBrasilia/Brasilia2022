@@ -171,7 +171,7 @@ const GRUPPE4 = [
         nr: 22,
         user: "Commercial space on the Via W2",
         about: "Not only the Comércio Locais offer commercial space but also buildings along the Via W2 and the Via W3. If you want to learn more about the Comércio Locais, the Superquadras and everyday life in the Plano Piloto click below. Source: own picture, 24.04.2022.",
-        image: "<img style='width:400px' src='geschaefteW2sul.jpeg' />", 
+        image: "<img style='width:400px' src='geschaefteW2sul.jpg' />", 
         lat:  -15.79504,
         lng: -47.89196,
     },
