@@ -473,3 +473,11 @@ p10 {
   font-size: 9px;
   align-items: left;
 }
+
+.quelle {
+  text-align: left;
+  font-size: 0.8em;
+  padding-left: 1em;
+  margin-top: -3em;
+  color: #fff;
+}
